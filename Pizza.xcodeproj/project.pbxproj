@@ -15,6 +15,8 @@
 		8763548D1D043F410091A029 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8763548C1D043F410091A029 /* Images.xcassets */; };
 		876354901D043F410091A029 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8763548E1D043F410091A029 /* LaunchScreen.xib */; };
 		8763549C1D043F410091A029 /* PizzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8763549B1D043F410091A029 /* PizzaTests.m */; };
+		87650FF81D0D73D7003EA2C6 /* PizzaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87650FF71D0D73D7003EA2C6 /* PizzaCell.m */; };
+		87650FFE1D0D77BA003EA2C6 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 87650FFD1D0D77BA003EA2C6 /* Pizza.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,11 @@
 		8763548F1D043F410091A029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		876354951D043F410091A029 /* PizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8763549A1D043F410091A029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8763549B1D043F410091A029 /* PizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PizzaTests.m; sourceTree = "<group>"; };
+		8763549B1D043F410091A029 /* PizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PizzaTests.m; path = PizzaTests/PizzaTests.m; sourceTree = SOURCE_ROOT; };
+		87650FF61D0D73D7003EA2C6 /* PizzaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PizzaCell.h; sourceTree = "<group>"; };
+		87650FF71D0D73D7003EA2C6 /* PizzaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PizzaCell.m; sourceTree = "<group>"; };
+		87650FFC1D0D77BA003EA2C6 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		87650FFD1D0D77BA003EA2C6 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				8763548C1D043F410091A029 /* Images.xcassets */,
 				8763548E1D043F410091A029 /* LaunchScreen.xib */,
 				8763547C1D043F410091A029 /* Supporting Files */,
+				87650FF61D0D73D7003EA2C6 /* PizzaCell.h */,
+				87650FF71D0D73D7003EA2C6 /* PizzaCell.m */,
+				87650FFC1D0D77BA003EA2C6 /* Pizza.h */,
+				87650FFD1D0D77BA003EA2C6 /* Pizza.m */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -224,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87650FFE1D0D77BA003EA2C6 /* Pizza.m in Sources */,
+				87650FF81D0D73D7003EA2C6 /* PizzaCell.m in Sources */,
 				876354881D043F410091A029 /* SecondViewController.m in Sources */,
 				876354821D043F410091A029 /* AppDelegate.m in Sources */,
 				876354851D043F410091A029 /* FirstViewController.m in Sources */,
@@ -424,6 +436,7 @@
 				876354A11D043F410091A029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		876354A21D043F410091A029 /* Build configuration list for PBXNativeTarget "PizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +445,7 @@
 				876354A41D043F410091A029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
