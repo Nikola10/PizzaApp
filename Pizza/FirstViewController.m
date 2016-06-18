@@ -57,4 +57,18 @@
     
 }
 
+
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SecondViewController *secondVC = [self.storyboard instantiateViewControllerWithIdentifier: @"SecondViewController"];
+    secondVC.pizza = [ self.pizzas objectAtIndex:indexPath.row];
+    
+    
+    [self presentViewController: secondVC animated:YES completion:nil];
+    
+}
+
+
+
 @end

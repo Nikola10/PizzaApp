@@ -1,13 +1,7 @@
-//
-//  SecondViewController.m
-//  Pizza
-//
-//  Created by pgs on 6/5/16.
-//  Copyright (c) 2016 com.nikola. All rights reserved.
-//
+
 
 #import "SecondViewController.h"
-
+#import "FirstViewController.h"
 @interface SecondViewController ()
 
 @end
@@ -21,7 +15,20 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+-(void) viewWillAppear: (BOOL) animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%@",self.pizza.naziv);
+    NSLog(@"%@",self.pizza.recept);
+    
+    self.naslovLabel.text = self.pizza.naziv;
+    self.sadrzajTextView.text = self.pizza.recept;
+}
+- (IBAction)back:(id)sender {
+   FirstViewController *FirstVC = [self.storyboard instantiateViewControllerWithIdentifier: @"FirstViewController"];
+    
+    [self presentViewController: FirstVC animated:YES completion:nil];
+}
 @end
